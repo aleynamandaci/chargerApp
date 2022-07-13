@@ -8,5 +8,5 @@
 struct User: Decodable {
   var email: String?
   var token: String?
-  var userID: String?
+  var userID: Int?
 }

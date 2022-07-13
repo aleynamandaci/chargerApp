@@ -10,13 +10,11 @@ import UIKit
 
 func postRequest(url : String , parameters: [String: Any] , token : String?) {
   
-  // declare the parameter as a dictionary that contains string as key and value combination. considering inputs are valid
-  
     let parameters = parameters
   
   // create the url with URL
-  let url = URL(string: url)! // change server url accordingly
-  
+  let url = URL(string: url)!
+    
   // create the session object
   let session = URLSession.shared
   

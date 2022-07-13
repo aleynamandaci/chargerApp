@@ -12,9 +12,16 @@ import UserNotifications
 class ViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager: CLLocationManager?
     @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var textFieldView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let thickness: CGFloat = 2.0
+        let bottomBorder = CALayer()
+        bottomBorder.frame = CGRect(x:0, y: self.textFieldView.frame.size.height - thickness, width: self.textFieldView.frame.size.width, height:thickness)
+        bottomBorder.backgroundColor = grayScale.cgColor
+        textFieldView.layer.addSublayer(bottomBorder)
         
         locationManager = CLLocationManager()
         locationManager?.delegate = self
