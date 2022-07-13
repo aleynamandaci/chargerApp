@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42480153287F57020011279F /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42480152287F57020011279F /* CitiesViewController.swift */; };
+		42480155287F63E40011279F /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42480154287F63E40011279F /* AppointmentsViewController.swift */; };
 		4249666B286C693E00B92DA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249666A286C693E00B92DA9 /* AppDelegate.swift */; };
 		4249666D286C693E00B92DA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249666C286C693E00B92DA9 /* SceneDelegate.swift */; };
 		4249666F286C693E00B92DA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249666E286C693E00B92DA9 /* ViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42480152287F57020011279F /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
+		42480154287F63E40011279F /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
 		42496667286C693E00B92DA9 /* ChargerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChargerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4249666A286C693E00B92DA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4249666C286C693E00B92DA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 			children = (
 				4249666E286C693E00B92DA9 /* ViewController.swift */,
 				425315EB287F0D8500DB99CB /* ProfileViewController.swift */,
+				42480152287F57020011279F /* CitiesViewController.swift */,
+				42480154287F63E40011279F /* AppointmentsViewController.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -285,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				42D5C10A287E00BE00B7DBFE /* ApiHelper.swift in Sources */,
+				42480153287F57020011279F /* CitiesViewController.swift in Sources */,
+				42480155287F63E40011279F /* AppointmentsViewController.swift in Sources */,
 				42ED8A9E287C38F300D9F8FB /* Model.swift in Sources */,
 				425315EA287ECDC600DB99CB /* CustomComponents.swift in Sources */,
 				425315E6287EC75600DB99CB /* ColorPallette.swift in Sources */,

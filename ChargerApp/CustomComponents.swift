@@ -7,10 +7,10 @@
 
 import UIKit
 
-func customTextField (string : String) -> NSAttributedString {
-    let grayPlaceholderText = NSAttributedString(string: string,
-                                                attributes: [NSAttributedString.Key.foregroundColor: grayScale])
-    return grayPlaceholderText
+func customTextField (string : String, color : UIColor) -> NSAttributedString {
+    let placeholderTextColor = NSAttributedString(string: string,
+                                                attributes: [NSAttributedString.Key.foregroundColor: color])
+    return placeholderTextColor
 }
 
 func backgroundColor (view : UIView) {
@@ -28,4 +28,8 @@ func profileView (view : UIView) {
     view.layer.shadowOffset = CGSize(width: 3, height: 3)
     view.layer.shadowOpacity = 0.7
     view.layer.shadowRadius = 4.0
+}
+
+func searchBar (view : UIView) {
+    view.layer.cornerRadius = 15
 }

@@ -9,7 +9,6 @@ import UIKit
 
 
 func postRequest(url : String , parameters: [String: Any] , token : String?) {
-  
     let parameters = parameters
   
   // create the url with URL
@@ -34,11 +33,11 @@ func postRequest(url : String , parameters: [String: Any] , token : String?) {
     request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
   } catch let error {
     print(error.localizedDescription)
-    return
+      return
   }
   
   // create dataTask using the session object to send data to the server
-  let task = session.dataTask(with: request) { data, response, error in
+    let task = session.dataTask(with: request) { data, response, error in
     
     if let error = error {
       print("Post Request Error: \(error.localizedDescription)")
@@ -58,21 +57,27 @@ func postRequest(url : String , parameters: [String: Any] , token : String?) {
       print("nil Data received from the server")
       return
     }
-    
+      
     do {
       // create json object from data or use JSONDecoder to convert to Model stuct
        
-      if let jsonResponse = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers) as? [String: Any] {
+        if let jsonResponse = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers) as? [String: Any] {
         print(jsonResponse)
         // handle json response
+            
       } else {
         print("data maybe corrupted or in wrong format")
         throw URLError(.badServerResponse)
       }
-    } catch let error {
+        
+    
+    }
+      catch let error {
       print(error.localizedDescription)
     }
+      
   }
   // perform the task
   task.resume()
+    
 }
