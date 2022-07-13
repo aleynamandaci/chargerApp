@@ -18,6 +18,7 @@
 		4249668F286C694100B92DA9 /* ChargerAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249668E286C694100B92DA9 /* ChargerAppUITests.swift */; };
 		42496691286C694100B92DA9 /* ChargerAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42496690286C694100B92DA9 /* ChargerAppUITestsLaunchTests.swift */; };
 		425315E6287EC75600DB99CB /* ColorPallette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425315E5287EC75600DB99CB /* ColorPallette.swift */; };
+		425315EA287ECDC600DB99CB /* CustomComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425315E9287ECDC600DB99CB /* CustomComponents.swift */; };
 		42D5C10A287E00BE00B7DBFE /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D5C109287E00BE00B7DBFE /* ApiHelper.swift */; };
 		42ED8A9E287C38F300D9F8FB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED8A9D287C38F300D9F8FB /* Model.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		4249668E286C694100B92DA9 /* ChargerAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerAppUITests.swift; sourceTree = "<group>"; };
 		42496690286C694100B92DA9 /* ChargerAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargerAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		425315E5287EC75600DB99CB /* ColorPallette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallette.swift; sourceTree = "<group>"; };
+		425315E9287ECDC600DB99CB /* CustomComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponents.swift; sourceTree = "<group>"; };
 		42D5C109287E00BE00B7DBFE /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
 		42ED8A9D287C38F300D9F8FB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 				4249666A286C693E00B92DA9 /* AppDelegate.swift */,
 				4249666C286C693E00B92DA9 /* SceneDelegate.swift */,
 				4249666E286C693E00B92DA9 /* ViewController.swift */,
+				425315E9287ECDC600DB99CB /* CustomComponents.swift */,
 				425315E5287EC75600DB99CB /* ColorPallette.swift */,
 				42496670286C693E00B92DA9 /* Main.storyboard */,
 				42496676286C694100B92DA9 /* Assets.xcassets */,
@@ -272,6 +275,7 @@
 			files = (
 				42D5C10A287E00BE00B7DBFE /* ApiHelper.swift in Sources */,
 				42ED8A9E287C38F300D9F8FB /* Model.swift in Sources */,
+				425315EA287ECDC600DB99CB /* CustomComponents.swift in Sources */,
 				425315E6287EC75600DB99CB /* ColorPallette.swift in Sources */,
 				42496675286C693E00B92DA9 /* ChargerApp.xcdatamodeld in Sources */,
 				4249666F286C693E00B92DA9 /* ViewController.swift in Sources */,

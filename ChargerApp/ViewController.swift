@@ -11,11 +11,17 @@ import UserNotifications
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     var locationManager: CLLocationManager?
-    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var emailField: UITextField! {
+        didSet {
+            emailField.attributedPlaceholder = customTextField(string: "E-POSTA ADRESİNİZ")
+        }
+    }
     @IBOutlet weak var textFieldView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        backgroundColor(view: self.view)
         
         let thickness: CGFloat = 2.0
         let bottomBorder = CALayer()
