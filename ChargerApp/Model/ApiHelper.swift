@@ -44,13 +44,6 @@ func postRequest(url : String , parameters: [String: Any] , token : String?) {
       return
     }
     
-    // ensure there is valid response code returned from this HTTP response
-    guard let httpResponse = response as? HTTPURLResponse,
-          (200...299).contains(httpResponse.statusCode)
-    else {
-      print("Invalid Response received from the server")
-      return
-    }
     
     // ensure there is data returned
     guard let responseData = data else {
@@ -60,10 +53,15 @@ func postRequest(url : String , parameters: [String: Any] , token : String?) {
       
     do {
       // create json object from data or use JSONDecoder to convert to Model stuct
-       
+        
+        
         if let jsonResponse = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers) as? [String: Any] {
+            
+            
+            
         print(jsonResponse)
         // handle json response
+            
             
       } else {
         print("data maybe corrupted or in wrong format")
@@ -81,3 +79,49 @@ func postRequest(url : String , parameters: [String: Any] , token : String?) {
   task.resume()
     
 }
+
+/*
+func getRequest (parameters : [String : Any]) {
+    // Create URL
+    let url = URL(string: "http://ec2-18-197-100-203.eu-central-1.compute.amazonaws.com:8080/provinces")
+    guard let requestUrl = url else { fatalError() }
+
+    // Create URL Request
+    var request = URLRequest(url: requestUrl)
+
+    // Specify HTTP Method to use
+    request.httpMethod = "GET"
+    
+    request.setValue("GEWk_NAX3de9zMWEVahH7cwzvF2sNqhx", forHTTPHeaderField: "token")
+    
+    do {
+      // convert parameters to Data and assign dictionary to httpBody of request
+      request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted)
+    } catch let error {
+      print(error.localizedDescription)
+        return
+    }
+
+    // Send HTTP Request
+    let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+        
+        // Check if Error took place
+        if let error = error {
+            print("Error took place \(error)")
+            return
+        }
+        
+        // Read HTTP Response Status code
+        if let response = response as? HTTPURLResponse {
+            print("Response HTTP Status code: \(response.statusCode)")
+        }
+        
+        // Convert HTTP Response Data to a simple String
+        if let data = data, let dataString = String(data: data, encoding: .utf8) {
+            print("Response data string:\n \(dataString)")
+        }
+        
+    }
+    task.resume()
+}
+*/

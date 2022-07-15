@@ -23,7 +23,7 @@
 		425315EA287ECDC600DB99CB /* CustomComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425315E9287ECDC600DB99CB /* CustomComponents.swift */; };
 		425315EC287F0D8500DB99CB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425315EB287F0D8500DB99CB /* ProfileViewController.swift */; };
 		42D5C10A287E00BE00B7DBFE /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D5C109287E00BE00B7DBFE /* ApiHelper.swift */; };
-		42ED8A9E287C38F300D9F8FB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED8A9D287C38F300D9F8FB /* Model.swift */; };
+		42ED8A9E287C38F300D9F8FB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED8A9D287C38F300D9F8FB /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +64,7 @@
 		425315E9287ECDC600DB99CB /* CustomComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponents.swift; sourceTree = "<group>"; };
 		425315EB287F0D8500DB99CB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		42D5C109287E00BE00B7DBFE /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
-		42ED8A9D287C38F300D9F8FB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		42ED8A9D287C38F300D9F8FB /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		423434792881735400FD2EBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42ED8A9D287C38F300D9F8FB /* DataModel.swift */,
+				42D5C109287E00BE00B7DBFE /* ApiHelper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4249665E286C693E00B92DA9 = {
 			isa = PBXGroup;
 			children = (
@@ -115,9 +124,8 @@
 		42496669286C693E00B92DA9 /* ChargerApp */ = {
 			isa = PBXGroup;
 			children = (
+				423434792881735400FD2EBC /* Model */,
 				425315ED287F0E5B00DB99CB /* views */,
-				42ED8A9D287C38F300D9F8FB /* Model.swift */,
-				42D5C109287E00BE00B7DBFE /* ApiHelper.swift */,
 				4249666A286C693E00B92DA9 /* AppDelegate.swift */,
 				4249666C286C693E00B92DA9 /* SceneDelegate.swift */,
 				425315E9287ECDC600DB99CB /* CustomComponents.swift */,
@@ -293,7 +301,7 @@
 				42D5C10A287E00BE00B7DBFE /* ApiHelper.swift in Sources */,
 				42480153287F57020011279F /* CitiesViewController.swift in Sources */,
 				42480155287F63E40011279F /* AppointmentsViewController.swift in Sources */,
-				42ED8A9E287C38F300D9F8FB /* Model.swift in Sources */,
+				42ED8A9E287C38F300D9F8FB /* DataModel.swift in Sources */,
 				425315EA287ECDC600DB99CB /* CustomComponents.swift in Sources */,
 				425315E6287EC75600DB99CB /* ColorPallette.swift in Sources */,
 				42496675286C693E00B92DA9 /* ChargerApp.xcdatamodeld in Sources */,

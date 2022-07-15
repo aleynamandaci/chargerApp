@@ -6,7 +6,7 @@
 //
 
 struct User: Decodable {
-  var email: String?
-  var token: String?
-  var userID: Int?
+  let email: String?
+  let token: String?
+  let userID: Int?
 }
