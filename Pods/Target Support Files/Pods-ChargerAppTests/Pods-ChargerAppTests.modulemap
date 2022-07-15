@@ -1,0 +1,6 @@
+framework module Pods_ChargerAppTests {
+  umbrella header "Pods-ChargerAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
