@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4225BF7A2881CAE500F14A29 /* CitiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225BF782881CAE500F14A29 /* CitiesTableViewCell.swift */; };
+		4225BF7B2881CAE500F14A29 /* CitiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4225BF792881CAE500F14A29 /* CitiesTableViewCell.xib */; };
 		42480153287F57020011279F /* CitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42480152287F57020011279F /* CitiesViewController.swift */; };
 		42480155287F63E40011279F /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42480154287F63E40011279F /* AppointmentsViewController.swift */; };
 		4249666B286C693E00B92DA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249666A286C693E00B92DA9 /* AppDelegate.swift */; };
@@ -22,7 +24,6 @@
 		425315E6287EC75600DB99CB /* ColorPallette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425315E5287EC75600DB99CB /* ColorPallette.swift */; };
 		425315EA287ECDC600DB99CB /* CustomComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425315E9287ECDC600DB99CB /* CustomComponents.swift */; };
 		425315EC287F0D8500DB99CB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425315EB287F0D8500DB99CB /* ProfileViewController.swift */; };
-		42D5C10A287E00BE00B7DBFE /* ApiHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D5C109287E00BE00B7DBFE /* ApiHelper.swift */; };
 		42ED8A9E287C38F300D9F8FB /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ED8A9D287C38F300D9F8FB /* DataModel.swift */; };
 		7D82404465170AD38E6842E5 /* Pods_ChargerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61BB3EF911120FCF2ACEC5C /* Pods_ChargerApp.framework */; };
 		93046F9B8E8FDF66F014012C /* Pods_ChargerAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E3FD218F9D0271B82373DF /* Pods_ChargerAppTests.framework */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		01E3FD218F9D0271B82373DF /* Pods_ChargerAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChargerAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C3724E20182F279F23815D1 /* Pods-ChargerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargerApp.debug.xcconfig"; path = "Target Support Files/Pods-ChargerApp/Pods-ChargerApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4225BF782881CAE500F14A29 /* CitiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesTableViewCell.swift; sourceTree = "<group>"; };
+		4225BF792881CAE500F14A29 /* CitiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CitiesTableViewCell.xib; sourceTree = "<group>"; };
 		42480152287F57020011279F /* CitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesViewController.swift; sourceTree = "<group>"; };
 		42480154287F63E40011279F /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
 		42496667286C693E00B92DA9 /* ChargerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChargerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +71,6 @@
 		425315E5287EC75600DB99CB /* ColorPallette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPallette.swift; sourceTree = "<group>"; };
 		425315E9287ECDC600DB99CB /* CustomComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponents.swift; sourceTree = "<group>"; };
 		425315EB287F0D8500DB99CB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		42D5C109287E00BE00B7DBFE /* ApiHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiHelper.swift; sourceTree = "<group>"; };
 		42ED8A9D287C38F300D9F8FB /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		4903C58C1AD31AB79B3D9388 /* Pods-ChargerAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargerAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ChargerAppTests/Pods-ChargerAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		53973D7F91D65958D4685829 /* Pods-ChargerAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChargerAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChargerAppTests/Pods-ChargerAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				42ED8A9D287C38F300D9F8FB /* DataModel.swift */,
-				42D5C109287E00BE00B7DBFE /* ApiHelper.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,6 +153,8 @@
 				42496678286C694100B92DA9 /* LaunchScreen.storyboard */,
 				4249667B286C694100B92DA9 /* Info.plist */,
 				42496673286C693E00B92DA9 /* ChargerApp.xcdatamodeld */,
+				4225BF782881CAE500F14A29 /* CitiesTableViewCell.swift */,
+				4225BF792881CAE500F14A29 /* CitiesTableViewCell.xib */,
 			);
 			path = ChargerApp;
 			sourceTree = "<group>";
@@ -204,7 +207,6 @@
 				4903C58C1AD31AB79B3D9388 /* Pods-ChargerAppTests.debug.xcconfig */,
 				53973D7F91D65958D4685829 /* Pods-ChargerAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -219,6 +221,7 @@
 				42496663286C693E00B92DA9 /* Sources */,
 				42496664286C693E00B92DA9 /* Frameworks */,
 				42496665286C693E00B92DA9 /* Resources */,
+				5AEFB9C761490503CB42C281 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +259,7 @@
 				42496686286C694100B92DA9 /* Sources */,
 				42496687286C694100B92DA9 /* Frameworks */,
 				42496688286C694100B92DA9 /* Resources */,
+				8FB8B3FEDAE51EA78CF7C820 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4225BF7B2881CAE500F14A29 /* CitiesTableViewCell.xib in Resources */,
 				4249667A286C694100B92DA9 /* LaunchScreen.storyboard in Resources */,
 				42496677286C694100B92DA9 /* Assets.xcassets in Resources */,
 				42496672286C693E00B92DA9 /* Main.storyboard in Resources */,
@@ -338,6 +343,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		5AEFB9C761490503CB42C281 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChargerApp/Pods-ChargerApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChargerApp/Pods-ChargerApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChargerApp/Pods-ChargerApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FB8B3FEDAE51EA78CF7C820 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChargerApp-ChargerAppUITests/Pods-ChargerApp-ChargerAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChargerApp-ChargerAppUITests/Pods-ChargerApp-ChargerAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChargerApp-ChargerAppUITests/Pods-ChargerApp-ChargerAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BD80B0A4E05085B40EC65AB8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -411,7 +450,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42D5C10A287E00BE00B7DBFE /* ApiHelper.swift in Sources */,
+				4225BF7A2881CAE500F14A29 /* CitiesTableViewCell.swift in Sources */,
 				42480153287F57020011279F /* CitiesViewController.swift in Sources */,
 				42480155287F63E40011279F /* AppointmentsViewController.swift in Sources */,
 				42ED8A9E287C38F300D9F8FB /* DataModel.swift in Sources */,
