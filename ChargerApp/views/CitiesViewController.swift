@@ -18,8 +18,14 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CitiesTableViewCell", for: indexPath) as! CitiesTableViewCell
+        //cell.cityName.text = cities[indexPath.row]
         
-        return CitiesTableViewCell.init()
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        cell.backgroundColor = UIColor.clear
+        tableView.layer.backgroundColor = UIColor.clear.cgColor
+        tableView.backgroundColor = .clear
+        return cell
     }
     
     
@@ -30,8 +36,11 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         backgroundColor(view: self.view)
         
+        let nib = UINib(nibName: "CitiesTableViewCell", bundle: nil)
+        citiesTableView.register(nib, forCellReuseIdentifier: "CitiesTableViewCell")
         // Do any additional setup after loading the view.
         getCities()
+        
         citiesTableView.delegate = self
         citiesTableView.dataSource = self
         
@@ -42,18 +51,20 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         let headers : HTTPHeaders = [
           "Accept": "application/json",
-          "token": token
+          "token": "Fsfjh-fGnWtGxGcvQJ9d64Rx_txemXqL"
         ]
 
         let parameters: [String: Any] = [
-            "userID" : userID
+            "userID" : 88
         ]
 
         
        
         AF.request(url, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: headers)
             .responseJSON { (data) in
-                self.cities = data.value as! [String]
+                print(data.result)
+                
+                //self.cities = data.value as! [String]
                 
               }
     }
