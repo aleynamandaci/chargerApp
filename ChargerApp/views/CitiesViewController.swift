@@ -14,7 +14,7 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var cities : [String]!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return 81
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -33,7 +33,7 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         backgroundColor(view: self.view)
         
         let nib = UINib(nibName: "CitiesTableViewCell", bundle: nil)
@@ -48,25 +48,25 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func getCities(){
         let url = URL(string: "http://ec2-18-197-100-203.eu-central-1.compute.amazonaws.com:8080/provinces")!
-
-        let headers : HTTPHeaders = [
-          "Accept": "application/json",
-          "token": "Fsfjh-fGnWtGxGcvQJ9d64Rx_txemXqL"
-        ]
-
-        let parameters: [String: Any] = [
-            "userID" : 88
-        ]
-
         
-       
+        let headers : HTTPHeaders = [
+            "Accept": "application/json",
+            "token": token
+        ]
+        
+        let parameters: [String: Any] = [
+            "userID" : userID
+        ]
+        
+        
+        
         AF.request(url, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: headers)
             .responseJSON { (data) in
                 print(data.result)
                 
                 //self.cities = data.value as! [String]
                 
-              }
+            }
     }
     @IBAction func backButtonPressed(_ sender: UIButton) {
         dismiss(animated: true) {
@@ -74,5 +74,5 @@ class CitiesViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-
+    
 }

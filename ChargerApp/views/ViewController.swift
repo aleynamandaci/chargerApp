@@ -40,6 +40,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager = CLLocationManager()
         locationManager?.delegate = self
         locationManager?.requestAlwaysAuthorization()
+        
+        registerForPushNotifications()
+
 
     }
 
@@ -50,6 +53,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     // get location later
                 }
             }
+        }
+    }
+    
+    func registerForPushNotifications() {
+      //1
+      UNUserNotificationCenter.current()
+        //2
+        .requestAuthorization(options: [.alert, .sound, .badge]) { granted, _ in
+          //3
+          print("Permission granted: \(granted)")
         }
     }
     
